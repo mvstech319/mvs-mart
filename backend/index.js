@@ -4,11 +4,11 @@ const dotenv=require('dotenv')
 const bodyParser=require('express')
 dotenv.config();
 const cors=require('cors')
-const UserRouter=require('./src/routes/user_router')
-const ProductRouter=require('./src/routes/product_router')
-const CartRouter=require('./src/routes/cart_router')
-const AddressRouter=require('./src/routes/address_router')
-const PaymentRouter=require('./src/routes/payment_router')
+const UserRouter=require('./routes/user_router')
+const ProductRouter=require('./routes/product_router')
+const CartRouter=require('./routes/cart_router')
+const AddressRouter=require('./routes/address_router')
+const PaymentRouter=require('./routes/payment_router')
 
 const app=express();
 app.use(bodyParser.json());
