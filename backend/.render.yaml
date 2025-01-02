@@ -1,6 +1,10 @@
 services:
-  - name: backend
-    type: web
-    rootDir: backend
+  - type: web
+    name: backend
+    runtime: node
     buildCommand: npm install
-    startCommand: npm start
+    startCommand: node index.js
+    rootDir: . # Agar root folder mein hai
+    envVars:
+      - key: NODE_ENV
+        value: production
